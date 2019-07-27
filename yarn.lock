@@ -6985,6 +6985,11 @@ vuepress-plugin-container@^2.0.0:
   dependencies:
     markdown-it-container "^2.0.0"
 
+vuepress-plugin-google-tag-manager@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-google-tag-manager/-/vuepress-plugin-google-tag-manager-0.0.3.tgz#94d0ff671e78e564c2777322df224083f34409ed"
+  integrity sha512-BjhvRVmPqeWnG6JojLjs4ZUTtzxE423KaT2D6llTxfUrDsFhhNTNO2myQpoQp6Buo9/wc8pLDDDyJxY5XWWdsA==
+
 vuepress@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.0.2.tgz#da62d6e43faca0b8af0bcffff6975fa27dbfdea3"
