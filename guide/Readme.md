@@ -39,6 +39,16 @@ yarn start
 
 Allows you to specify the port on which the API is located. Default - 3000.
 
+### HTTP_SERVER
+ - type: String
+ 
+Url where the API is located. Default - http://localhost/
+
+### BASE_URL
+ - type: String
+
+Suffix in url. Default - "/".
+
 ## Config file
 
 All basic settings are in the file rapin.config.ts. This file allows editing default setting and adding plugins. 
@@ -59,6 +69,13 @@ template: {
   engine: 'twig'
 }
 ```
+### storage
+In this section, you can specify the path to the storage folder.
+```bash
+storage: 'path/to/folder'
+
+```
+
 ### cache
 In this section, you can specify the way the cache is kept and the lifetime of the cache. Currently only the file method is available.
 
