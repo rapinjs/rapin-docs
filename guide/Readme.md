@@ -30,6 +30,15 @@ To run in production use the command:
 ```bash
 yarn start
 ```
+
+
+## Envirouments
+
+### PORT
+ - type: String
+
+Allows you to specify the port on which the API is located. Default - 3000.
+
 ## Config file
 
 All basic settings are in the file rapin.config.ts. This file allows editing default setting and adding plugins. 
