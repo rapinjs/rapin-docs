@@ -64,19 +64,65 @@ Class for setting data for respons
 
 Class to work with styles
 
-## Controller
 
-### Create new controller
+## Config file
 
-## Model
+All basic settings are in the file rapin.config.ts. This file allows editing default setting and adding plugins. 
 
-### Create new model
+### style
+In this section, you can set the stylesheet engine. Currently only postcss is available.
 
-## View
+```js
+style: {
+  engine: 'postcss'
+}
+```
+### template
+In this section, you can set the template engine. Currently Twig, Pug and Mustache is availables.
 
-### Stylesheet
-### Template
+```js
+template: {
+  engine: 'twig'
+}
+```
+### storage
+In this section, you can specify the path to the storage folder.
+```js
+storage: 'path/to/folder'
 
-## Plugin
+```
 
-### Create new plugin
+### cache
+In this section, you can specify the way the cache is kept and the lifetime of the cache. Currently only the file method is available.
+
+```js
+cache: {
+  engine: 'file',
+  expire: 3600
+}
+
+```
+### log
+In this section you can specify the location of the file for storing logs.
+```js
+log: {
+  filename: 'error.log'
+},
+```
+### mail
+In this section, you can specify settings for sending mail through the class [mail](/api/#mail).
+```js
+mail: {
+  service: 'gmail',
+  user: 'test@test.com',
+  password: ''
+}
+```
+### plugins
+In this section, you can connect plugins.
+
+```js
+
+plugins: ['@rapin/typeorm', '@rapin/typeorm-auth', ...]
+
+```
